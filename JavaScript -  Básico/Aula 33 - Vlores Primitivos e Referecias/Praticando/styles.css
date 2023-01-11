@@ -1,10 +1,9 @@
-
-*{
+* {
    margin: 0;
    padding: 0;
 }
 
-body{
+body {
    width: 100vw;
    height: 100vh;
    display: grid;
@@ -12,7 +11,8 @@ body{
    gap: 10px;
 }
 
-form, .res{
+form,
+.res {
    margin: 20px;
    padding: 20px;
    border-radius: 10px;
@@ -21,22 +21,22 @@ form, .res{
    flex-direction: column;
 }
 
-label{
+label {
    font-size: 2rem;
    text-transform: uppercase;
 }
 
-input{
+input {
    height: 30px;
    font-size: 1.5rem;
 }
 
-.submitBtn{
+.submitBtn {
    margin-top: 20px;
    height: 50px;
 }
 
-.res{
+.res {
    font-size: 1.5rem;
    text-transform: uppercase;
 }
