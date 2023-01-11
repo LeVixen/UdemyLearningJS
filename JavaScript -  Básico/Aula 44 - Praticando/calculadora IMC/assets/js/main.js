@@ -12,6 +12,7 @@ form.addEventListener('submit', (event) => {
    }
    if (!altura) {
       setResult('Altura inválida', false);
+      return;
    }
 
    const imc = getImc(peso, altura);
