@@ -18,7 +18,7 @@ function subForm() {
          idade: idade,
          peso: peso,
       })
-
+      console.log(user)
       res.innerHTML += `<p>Nome:${nome} ${sobrenome}</br>Idade: ${idade}</br>Peso: ${peso}</p></br>`;
    }
 

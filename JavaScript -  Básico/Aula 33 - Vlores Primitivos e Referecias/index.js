@@ -1,5 +1,5 @@
 
-// ? Primitivos (imutáveis) - string, number, boolean, undefined, null (bigInt, symbol) - Valores copiados sd
+// ? Primitivos (imutáveis) - string, number, boolean, undefined, null (bigInt, symbol) - Valores copiados 
 var a = 'A';
 var b = a; // * Cópia
 console.log(a, b);
