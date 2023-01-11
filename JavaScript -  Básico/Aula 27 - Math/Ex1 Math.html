@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      body{
+         font-size: 1.5rem;
+      }
+   </style>
+</head>
+<body>
+   <script>
+      let num = Number(prompt('Escolha um número!'))
+
+      document.body.innerHTML += `<h2>Seu numero é ${num}</h2></br>`;
+      document.body.innerHTML += `Raiz quadrada: ${num ** 0.5}</br>`;
+      document.body.innerHTML += `${num} é inteiro: ${Number.isInteger(num)}</br>`;
+      document.body.innerHTML += `É NaN: ${isNaN(num)}<br>`;
+      document.body.innerHTML += `Arredondado para baixo: ${Math.floor(num)}</br>`;
+      document.body.innerHTML += `Arredondado para cima: ${Math.ceil(num)}</br>`;
+      document.body.innerHTML += `Com duas casas decimais: ${num.toFixed(2)}</br>`;
+   </script>
+</body>
+</html>
+

@@ -1,0 +1,42 @@
+
+*{
+   margin: 0;
+   padding: 0;
+}
+
+body{
+   width: 100vw;
+   height: 100vh;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 10px;
+}
+
+form, .res{
+   margin: 20px;
+   padding: 20px;
+   border-radius: 10px;
+   border: 1px solid black;
+   display: flex;
+   flex-direction: column;
+}
+
+label{
+   font-size: 2rem;
+   text-transform: uppercase;
+}
+
+input{
+   height: 30px;
+   font-size: 1.5rem;
+}
+
+.submitBtn{
+   margin-top: 20px;
+   height: 50px;
+}
+
+.res{
+   font-size: 1.5rem;
+   text-transform: uppercase;
+}
