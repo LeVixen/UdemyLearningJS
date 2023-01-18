@@ -14,7 +14,7 @@ const user = {
 }
 
 // ? 'for of' pega os indices do array ou obejto
-for(let i in user){
+for (let i in user) {
    console.log(i, user[i])
 }
 
@@ -23,14 +23,14 @@ console.log('------------------')
 const names = ['Vinicius', 'Carlos', 'Vitor']
 
 // ? 'for of' pega os valores do array ou objeto
-for(let i of names){
+for (let i of names) {
    console.log(i)
 }
 
 
 console.log('------------------')
 // ? 'forEach' 
-names.forEach(function (valor, indice){
+names.forEach(function (valor, indice) {
    console.log(valor, indice)
 })
 
