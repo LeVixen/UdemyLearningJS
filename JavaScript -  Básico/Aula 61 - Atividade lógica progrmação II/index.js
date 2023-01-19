@@ -16,7 +16,8 @@ for (let i = 0; i <= 100; i++) {
    console.log(i, calc(i))
 }
 
-// test git hub definitivo 7 
+
+// asdasdasdasdasdasdasdasdasdasd
 
 
  
