@@ -16,4 +16,5 @@ for (let i = 0; i <= 100; i++) {
    console.log(i, calc(i))
 }
 
-// salve 
+// salve
+// salve asdasdasdasd
