@@ -2,7 +2,7 @@ const iniciar = document.querySelector('.iniciar').onclick = (start);
 const pausar = document.querySelector('.pausar').onclick = (pause);
 const zerar = document.querySelector('.zerar').onclick = (stop);
 const clock = document.querySelector('.clock');
-
+// first
 let min = 0;
 let sec = 0;
 let hrs = 0;
