@@ -19,11 +19,14 @@ function twoDigits(digit) {
 
 function start() {
    watch()
+   clearInterval(interval);
    interval = setInterval(watch, 1000);
+   clock.style.color = 'black';
 }
 
 function pause() {
    clearInterval(interval);
+   clock.style.color = 'red';
 }
 
 function stop() {
@@ -36,16 +39,13 @@ function stop() {
 
 function watch() {
    sec++;
-
    if (sec == 60) {
       min++;
       sec = 0;
-
       if (min == 60) {
          hrs++;
          min = 0;
       }
-
    }
 
    clock.innerText = twoDigits(hrs) + ":" + twoDigits(min) + ":" + twoDigits(sec);
