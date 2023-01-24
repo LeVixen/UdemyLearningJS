@@ -8,11 +8,12 @@ submitBtn.addEventListener('click', addTask);
 
 function addTask(event) {
    event.preventDefault();
+
    let taskValue = task.value;
 
-   if (taskValue != 0) {
-      contador++;
+   contador++;
 
+   if (taskValue != 0) {
       let newItem = `<li id="${contador}">${taskValue}<button onclick="removeTask(${contador})">Apagar</button></li>`;
 
       listTask.innerHTML += newItem;
@@ -25,8 +26,10 @@ function loadTask() {
    let storage = window.localStorage;
    for (let i = 1; i <= storage.length; i++) {
       let itens = storage.getItem(i);
-      console.log(itens);
-      listTask.innerHTML += itens;
+      if (window.localStorage.getItem(i) !== null){
+         console.log(itens);
+         listTask.innerHTML += itens;
+      }
    }
 };
 
@@ -34,5 +37,3 @@ function removeTask(id) {
    document.getElementById(id).remove();
    window.localStorage.removeItem(id);
 };
-
-
