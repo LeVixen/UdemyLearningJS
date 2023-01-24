@@ -24,9 +24,9 @@ function addTask(event) {
 
 function loadTask() {
    let storage = window.localStorage;
-   for (let i = 1; i <= storage.length; i++) {
+   for (let i = 0; i <= storage.length; i++) {
       let itens = storage.getItem(i);
-      if (window.localStorage.getItem(i) !== null){
+      if (itens !== null) {
          console.log(itens);
          listTask.innerHTML += itens;
       }
@@ -35,5 +35,5 @@ function loadTask() {
 
 function removeTask(id) {
    document.getElementById(id).remove();
-   window.localStorage.removeItem(id);
+   window.localStorage.removeItem(id)
 };
