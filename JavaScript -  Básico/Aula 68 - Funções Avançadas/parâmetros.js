@@ -27,3 +27,5 @@ function funcao3({ nome, sobrenome, idade }) {
    console.log(nome, sobrenome, idade);
 }
 funcao3('Vinicius', 'Martins', 21);
+
+// teste
