@@ -29,7 +29,3 @@ function removeTask(id) {
    document.getElementById(id).remove();
    localStorage.removeItem(id)
 };
-
-// teste
-// teste 2
-// teste 3
