@@ -1,33 +1,38 @@
-const submitBtn = document.querySelector('#submit');
-const taskForm = document.querySelector('.taskForm');
 const task = document.querySelector('#taskText');
 const listTask = document.querySelector('.res')
+const submitBtn = document.querySelector('#submit');
 
 let contador = 0;
 
-taskForm.addEventListener('submit', (event) => {
-   event.preventDefault();
-});
-
 submitBtn.addEventListener('click', addTask);
 
-function addTask() {
-
+function addTask(event) {
+   event.preventDefault();
    let taskValue = task.value;
 
    if (taskValue != 0) {
       contador++;
 
-      let newItem = `<li id="${contador}">${taskValue}<button onclick="delet(${contador})">Apagar</button></li>
-      `;
+      let newItem = `<li id="${contador}">${taskValue}<button onclick="removeTask(${contador})">Apagar</button></li>`;
 
       listTask.innerHTML += newItem;
 
-      taskValue = ' '
+      window.localStorage.setItem(contador, newItem)
    }
-}
+};
 
-function delet(contador){
-   document.getElementById(contador).remove();
-   alert(`Tarefa N: ${contador} foi removida`)
-}
+function loadTask() {
+   let storage = window.localStorage;
+   for (let i = 1; i <= storage.length; i++) {
+      let itens = storage.getItem(i);
+      console.log(itens);
+      listTask.innerHTML += itens;
+   }
+};
+
+function removeTask(id) {
+   document.getElementById(id).remove();
+   window.localStorage.removeItem(id);
+};
+
+
