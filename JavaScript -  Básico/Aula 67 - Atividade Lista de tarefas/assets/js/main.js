@@ -1,23 +1,17 @@
-const task = document.querySelector('#taskText');
-const listTask = document.querySelector('.res')
-const submitBtn = document.querySelector('#submit');
+const task = document.querySelector('#input-new-task');
+const listTask = document.querySelector('.tarefas')
+const submitBtn = document.querySelector('#submitTask');
 
 let contador = 0;
 
 submitBtn.addEventListener('click', addTask);
 
-function addTask(event) {
-   event.preventDefault();
-
+function addTask() {
    let taskValue = task.value;
-
    contador++;
-
    if (taskValue != 0) {
       let newItem = `<li id="${contador}">${taskValue}<button onclick="removeTask(${contador})">Apagar</button></li>`;
-
       listTask.innerHTML += newItem;
-
       window.localStorage.setItem(contador, newItem)
    }
 };
