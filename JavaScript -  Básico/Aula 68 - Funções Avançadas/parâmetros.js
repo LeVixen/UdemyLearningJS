@@ -24,8 +24,29 @@ funcao2(2, undefined, 20);
 // ? Argumentos que sustenta todos os argumentos enviados
 
 function funcao3({ nome, sobrenome, idade }) {
-   console.log(nome, sobrenome, idade);
+   // console.log(nome, sobrenome, idade);
 }
-funcao3('Vinicius', 'Martins', 21);
+let obj = { nome: 'Vinicius', sobrenome: 'Martins', idade: 21 }
+funcao3(obj);
+// * também pode ser usado com array 
 
-// teste
+
+// ! Outro exemplo:
+
+const conta = (operador, acumulador, ...numeros) => {
+   for (let numero of numeros) {
+      if (operador === '+') acumulador += numero;
+      if (operador === '-') acumulador -= numero;
+      if (operador === '/') acumulador /= numero;
+      if (operador === '*') acumulador *= numero;
+   }
+   console.log(acumulador);
+}
+conta('+', 1, 20, 30, 40, 50);
+
+// ! Outro exemplo:
+
+const conta2 = (...args) => {
+   console.log(args);
+}
+conta2('+', 1, 20, 30, 40, 50);
