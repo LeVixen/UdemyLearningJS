@@ -30,7 +30,6 @@ let obj = { nome: 'Vinicius', sobrenome: 'Martins', idade: 21 }
 funcao3(obj);
 // * também pode ser usado com array 
 
-
 // ! Outro exemplo:
 
 const conta = (operador, acumulador, ...numeros) => {
