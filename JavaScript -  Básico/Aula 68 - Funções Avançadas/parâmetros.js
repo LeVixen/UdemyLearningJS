@@ -49,8 +49,3 @@ const conta2 = (...args) => {
    console.log(args);
 }
 conta2('+', 1, 20, 30, 40, 50);
-
-
-// main
-// main
-// main
