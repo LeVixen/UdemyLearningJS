@@ -50,5 +50,5 @@ const triplica = criaMultiplicador(3);
 console.log(duplica(2));
 console.log(triplica(10));
 
-
+// new comment
 // return functions 
