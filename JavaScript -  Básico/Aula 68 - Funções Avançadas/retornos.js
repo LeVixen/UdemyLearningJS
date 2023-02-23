@@ -51,3 +51,4 @@ console.log(duplica(2));
 console.log(triplica(10));
 
 // new comment
+// new comment
